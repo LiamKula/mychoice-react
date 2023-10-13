@@ -6,36 +6,36 @@ import {Carousel, Container, Image, Nav, Navbar, NavDropdown} from 'react-bootst
 import {Cart, Facebook, HouseFill, Instagram, PersonFill, Pinterest, Search, Twitter} from "react-bootstrap-icons";
 
 const TopMenu = () => (
-    <nav className={"navbar navbar-expand-xxl navbar-light bg-light mx-auto"}>
-            <ul class={"navbar-nav mx-auto"}>
-                    <li className={"nav-item"}>
-                            <Image src={"tedsbakeryLogo.png"}></Image>
-                    </li>
-            </ul>
-    </nav>
+    <Navbar className={"mx-auto"} bg={"light"} expand={"xxl"}>
+            <Nav className={"mx-auto"}>
+                    <Nav.Item>
+                            <Image src={"tedsbakeryLogo.png"}/>
+                    </Nav.Item>
+            </Nav>
+    </Navbar>
 
 );
 
 const NavbarInfo = () => (
-    <nav className={"navbar navbar-expand-lg navbar-light bg-light mx-auto sticky-top"}>
-            <ul class={"navbar-nav mx-auto"}>
-                    <li className={"nav-item"}>
-                            <a class={"nav-link"} href={"#"}>MENU</a>
-                    </li>
-                    <li className={"nav-item"}>
-                            <a className={"nav-link"} href={"#"}>SHOP INFORMATION</a>
-                    </li>
-                    <li className={"nav-item"}>
-                            <a className={"nav-link"} href={"#"}>FIND US</a>
-                    </li>
-                    <li className={"nav-item"}>
-                            <a className={"nav-link"} href={"#"}>GIFT CARD</a>
-                    </li>
-                    <li className={"nav-item me-3 custom-order-navItem"}>
-                            <a className={"nav-link"} href={"#"}>ORDER ONLINE</a>
-                    </li>
+    <Navbar className={"navbar mx-auto sticky-top"} bg={"light"} expand={"xxl"}>
+            <ul className={"navbar-nav mx-auto"}>
+                <Nav.Item>
+                    <Nav.Link href={"#"}>MENU</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href={"#"}>SHOP INFORMATION</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href={"#"}>FIND US</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href={"#"}>GIFT CARD</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className={"nav-item me-3 custom-order-navItem"}>
+                    <Nav.Link href={"#"}>ORDER ONLINE</Nav.Link>
+                </Nav.Item>
             </ul>
-    </nav>
+    </Navbar>
 );
 
 const ImageCarousel = () => (

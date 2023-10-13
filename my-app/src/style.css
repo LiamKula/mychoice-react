@@ -1,8 +1,6 @@
 .custom-order-navItem a.nav-link {
     color: #ffffff; /* Custom Text Color */
     background-color: #c71313; /* Custom Background Color */
-    border-radius: 0px; /* Custom Shape: Rounded Corners */
-    padding: 10px 20px; /* Custom Padding */
 }
 
 .custom-order-navItem a.nav-link:hover {
